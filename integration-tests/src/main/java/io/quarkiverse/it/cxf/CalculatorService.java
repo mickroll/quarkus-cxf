@@ -11,7 +11,7 @@ import io.quarkiverse.cxf.annotation.CXFClient;
 public class CalculatorService {
 
     @Inject
-    @CXFClient
+    @CXFClient("mockCalculator")
     CalculatorSoap calculatorWS;
 
     public int subtract(final int a, final int b) {
